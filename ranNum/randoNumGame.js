@@ -14,7 +14,7 @@ function randomnum(num1, num2) {
 
 alert(randomnum(prompt( "enter num1"),prompt("enter num2")));
 
-//
+
 //var rnumber = randomnum(6,1);
 //var guess = false;
 //alert("Welcome to the random Number Game, can you guess what the number is? range is from 1-6");
@@ -52,6 +52,6 @@ alert(randomnum(prompt( "enter num1"),prompt("enter num2")));
 //}
 //var length = 70;
 //alert(rectangleArea(5,length));
-//
+
 
 
