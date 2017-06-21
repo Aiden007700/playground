@@ -1,3 +1,13 @@
+.canvas,
+video {
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+background: #000;
+z-index: 5;
+}
 
 video {
     position: fixed;
@@ -11,6 +21,11 @@ video {
     transform: translateX(-50%) translateY(-50%);
     background-size: cover; 
     justify-content: center;
+     
+}
+
+video::-webkit-media-controls {
+    display:none !important;
 }
 
 body {
@@ -27,7 +42,7 @@ body {
       background: rgba(0,0,0,0.3);
       color: white;
       padding:2rem;
-      width:85%;
+      max-width:65%;
       min-height: 80vh;
       float: right;
       font-size: 1.2rem;
@@ -45,15 +60,16 @@ h1 {
         font-size: 1.5rem;
         text-align: center;
         margin-top: 10%;  
-    
-        
-
-
 
 }
+
+#intro, h1 {
+  text-align: left;  
+}
+
 @media (min-width:500px) { 
     #intro, h1 {
-        display: inline;
+        margin: 0 auto;
 
 }
     }
@@ -61,7 +77,23 @@ h1 {
     
     #intro,h1 {
         display: block;
+        margin:0 1rem;
     }
+    #intro {
+        font-size: 1em
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    #main {
+        min-width: 100%;
+        min-height: 100vh;   
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
 }
 
 
